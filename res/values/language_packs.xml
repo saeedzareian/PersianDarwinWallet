@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"
+?>
 <resources>
 
     <string-array name="language_codes" translatable="false">
+        <item >ir</item>
         <item >us</item>
         <item >uk</item>
         <item >eu</item>
@@ -11,9 +13,11 @@
         <item >ua</item>
         <item >ru</item>
         <item >by</item>
+	
     </string-array>
     
     <string-array name="language_names">
+        <item>Iranian Toman</item>
         <item>US Dollars</item>
         <item>British Pound Sterling</item>
         <item>European Union Euros</item>
@@ -23,9 +27,11 @@
         <item>Ukrainian hryvnias</item>
         <item>Russian Rubles</item>
         <item>Byelorussian Rubles</item>
+	
     </string-array>
     
     <string-array name="language_signs">
+        <item >Toman</item>
         <item >$</item>
         <item >£</item>
         <item >€</item>
@@ -35,6 +41,7 @@
         <item >&#160;ukrainian&#160;hryvnias&#160;</item>
         <item >&#160;russian&#160;rubles&#160;</item>
         <item >&#160;byelorussian&#160;rubles&#160;</item>
+	
     </string-array>
 
     <bool name="sign_before_value">true</bool>

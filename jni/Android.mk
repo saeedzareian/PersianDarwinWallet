@@ -6,7 +6,7 @@ include $(CLEAR_VARS)
 
 OPENCV_CAMERA_MODULES := off
 #OPENCV_MK_PATH:=/home/mhill/projects/darwin_wallet/opencv/OpenCV-2.3.1/share/OpenCV/OpenCV.mk
-OPENCV_MK_PATH:=/home/mhill/projects/darwin_wallet/opencv/sdk/native/jni/OpenCV.mk
+OPENCV_MK_PATH:=D:\Android\OpenCV-2.4.9-android-sdk\sdk\native\jni\OpenCV.mk
 
 
 OPENCV_LIB_TYPE:=STATIC
@@ -25,7 +25,7 @@ include $(OPENCV_MK_PATH)
 #	include $(OPENCV_MK_PATH)
 #endif
 
-LOCAL_C_INCLUDES := /home/mhill/projects/darwin_wallet/opencv/sdk/native/jni/include
+LOCAL_C_INCLUDES := D:\Android\OpenCV-2.4.9-android-sdk\sdk\native\jni\include
 
 LOCAL_MODULE    := native_wallet
 LOCAL_SRC_FILES := jni_recognizer.cpp NativeVision/vision.cpp

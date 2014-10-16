@@ -36,7 +36,7 @@ static bool training_complete = false;
 static vector<string> billMapping;
 
 extern "C" {
-	JNIEXPORT void JNICALL Java_com_ndu_mobile_darwinwallet_Recognizer_nvInitialize(JNIEnv* env, jobject thiz)
+	JNIEXPORT void JNICALL Java_com_artaveh_sepid_darwinwallet_Recognizer_nvInitialize(JNIEnv* env, jobject thiz)
 	{
 
 		LOGD( "Started nvInitialize" );
@@ -50,7 +50,7 @@ extern "C" {
 }
 
 extern "C" {
-	JNIEXPORT void JNICALL Java_com_ndu_mobile_darwinwallet_Recognizer_nvResetTrainedDatabase(JNIEnv* env, jobject thiz)
+	JNIEXPORT void JNICALL Java_com_artaveh_sepid_darwinwallet_Recognizer_nvResetTrainedDatabase(JNIEnv* env, jobject thiz)
 	{
 		LOGD( "Started nvResetTrainedDatabase" );
 
@@ -63,7 +63,7 @@ extern "C" {
 	}
 }
 extern "C" {
-	JNIEXPORT void JNICALL Java_com_ndu_mobile_darwinwallet_Recognizer_nvTrainImage(JNIEnv* env, jobject thiz, jstring billname, jstring billpath)
+	JNIEXPORT void JNICALL Java_com_artaveh_sepid_darwinwallet_Recognizer_nvTrainImage(JNIEnv* env, jobject thiz, jstring billname, jstring billpath)
 	{
 		//char* _imgBytes  = (char*) env->GetPrimitiveArrayCritical(imgBytes, 0);
 	    const char * _billpath = env->GetStringUTFChars(billpath, 0);
@@ -100,7 +100,7 @@ extern "C" {
 	}
 }
 extern "C" {
-	JNIEXPORT void JNICALL Java_com_ndu_mobile_darwinwallet_Recognizer_nvFinalizeTraining(JNIEnv* env, jobject thiz)
+	JNIEXPORT void JNICALL Java_com_artaveh_sepid_darwinwallet_Recognizer_nvFinalizeTraining(JNIEnv* env, jobject thiz)
 	{
 		LOGD( "Started nvFinalizeTraining" );
 	    descriptorMatcher->add(trainImages);
@@ -113,7 +113,7 @@ extern "C" {
 }
 
 extern "C" {
-	JNIEXPORT jstring JNICALL Java_com_ndu_mobile_darwinwallet_Recognizer_nvRecognize(JNIEnv* env, jobject thiz, jint width, jint height, jbyteArray yuv)
+	JNIEXPORT jstring JNICALL Java_com_artaveh_sepid_darwinwallet_Recognizer_nvRecognize(JNIEnv* env, jobject thiz, jint width, jint height, jbyteArray yuv)
 	{
 		jbyte* _yuv  = env->GetByteArrayElements(yuv, 0);
 		//jint*  _bgra = env->GetIntArrayElements(bgra, 0);
